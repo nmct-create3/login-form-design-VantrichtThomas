@@ -24,7 +24,6 @@
 
 :root {
   /* CSS variables here */
-  --color-neutral-xxx-light: #E2E3E7;
   --color-alpha-xx-light: #DCEAFF;
   --color-alpha-x-light: #81ADF0;
   --color-alpha-light: #4F95FF;
@@ -629,7 +628,10 @@ label, input {
 
 /* Hide the actual input but still be able to focus on it */
 .c-custom-option__input {
-
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid var(--color-neutral-xxxx-light);
 }
 
 .c-custom-option__label {
@@ -651,6 +653,9 @@ label, input {
 }
 
 /* checked state */
+.c-custom-option__input:checked {
+  background-color: var(--color-alpha-light);
+}
 
 .c-custom-option__input:checked + .c-custom-option__label .c-custom-option__fake-option {
 
