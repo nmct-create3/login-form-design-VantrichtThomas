@@ -73,10 +73,6 @@ html {
   background-color: var(--color-neutral-xxxx-light);
 }
 
-.theme  {
-  background-image: linear-gradient(to bottom right, #4F95FF, #2E77E6);
-}
-
 *,
 *:before,
 *:after {
@@ -501,7 +497,7 @@ label, input {
  display: block;
 }
 
-.theme .c-logo__symbol {
+.u-theme .c-logo__symbol {
    fill: #FFF;
 }
 
@@ -517,9 +513,9 @@ label, input {
  fill: #1B4186;
 }
 
-.theme .c-logo__symbol--circle1,
-.theme .c-logo__symbol--circle2,
-.theme .c-logo__symbol--circle3 {
+.u-theme .c-logo__symbol--circle1,
+.u-theme .c-logo__symbol--circle2,
+.u-theme .c-logo__symbol--circle3 {
    fill: #FFF;
 }
 
@@ -729,6 +725,18 @@ label, input {
 
 .u-color-neutral-dark {
     color: var(--color-neutral-dark);
+}
+
+
+/*
+    Utilities: theme
+    ---
+    Utility class for other theme colors
+*/
+
+
+.u-theme  {
+  background-image: linear-gradient(to bottom right, var(--color-alpha-light), var(--color-alpha-dark));
 }
 
 /*
