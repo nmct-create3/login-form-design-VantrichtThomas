@@ -582,10 +582,6 @@ label, input {
   border-radius: 4px;
 }
 
-.c-input--full-width {
-  width: 100%;
-}
-
 .c-input:focus {
   outline:none;
   box-shadow: 0 0 2px 2px #81ADF0;
@@ -799,7 +795,6 @@ label, input {
     max-width: none !important;
 }
 
-
 /*
     Utilities: align
     ---
@@ -832,6 +827,10 @@ label, input {
 
 .u-width-auto {
     width: auto !important;
+}
+
+.u-width-full {
+    width: 100% !important;
 }
 
 .u-1-of-2 {
